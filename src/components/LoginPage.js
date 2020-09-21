@@ -1,9 +1,10 @@
 import React, { useCallback, useContext } from 'react';
-import { withRouter, Redirect } from 'react-router';
+import { withRouter, Redirect} from 'react-router';
 // import { firebaseConfig } from '../firebase/config';
+import { Link } from 'react-router-dom';
 import { app } from '../firebase/config';
 import { AuthContext } from './Auth';
-// import SignUpPage from './SignUpPage';
+import SignUpPage from './SignUpPage';
 
 const LoginPage = ({ history }, signUpFunction) => {
 
@@ -46,10 +47,10 @@ const LoginPage = ({ history }, signUpFunction) => {
                     Password
                     <input name="password" type="password" placeholder="Password" />
                 </label>
-                <button type="submit">Log in</button>
+                <button type="submit">Log in</button> <Link to="/signup">Go to Sign Up</Link>
+                {/* <br />
                 <br />
-                <br />
-                {/* <button onClick={<Redirect to={'/signup'}/>}>Sign Up</button> */}
+                <Link to="/signup">Go to Sign Up</Link> */}
     {/* <button onClick={(<SignUpPage />)}>Sign Up First</button> */}
     {/* <div className="btnContainer">
                     {hasAccount ? (
