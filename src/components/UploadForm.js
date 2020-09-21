@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import ProgressBar from './ProgressBar';
+// import { app } from '../firebase/config';
+import ImageGrid from './ImageGrid';
 
 const UploadForm = () => {
     const [file, setFile] = useState(null);
@@ -18,17 +20,21 @@ const UploadForm = () => {
     }
 
     return (
-        <form>
-            <label>
+        <div>
+        <form className="uploadForm">
+            <label className="uploadFormLabel">
                 <input type="file" onChange={fileUpload} />
                 <span>⏍</span>
             </label>
+            {/* <button onClick={() => app.auth().signOut()}>Sign Out</button> */}
         <div className="photosBoard">
             { error && <div className="errorMessage"> { error } </div>} 
             { file && <div> { file.name } </div>}
             { file && <ProgressBar file={file} setFile={setFile} />}
         </div>
         </form>
+        <ImageGrid />
+        </div>
     )
 }
 
