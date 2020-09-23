@@ -1,4 +1,4 @@
-🌱This project is in working progress🌱
+🌱 This project is in working progress 🌱
 
 It is a photo gallery you can share with your friends/family to update each other on your day/life with a photo and a caption below it. 
 It is built with ReactJS and uses Firebase for the backend. 
