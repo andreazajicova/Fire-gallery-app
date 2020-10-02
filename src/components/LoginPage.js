@@ -4,9 +4,9 @@ import { withRouter, Redirect} from 'react-router';
 import { Link } from 'react-router-dom';
 import { app } from '../firebase/config';
 import { AuthContext } from './Auth';
-import SignUpPage from './SignUpPage';
+// import SignUpPage from './SignUpPage';
 
-const LoginPage = ({ history }, signUpFunction) => {
+const LoginPage = ({ history }) => {
 
     // const [hasAccount, setHasAccount] = useState(false);
 
@@ -19,7 +19,6 @@ const LoginPage = ({ history }, signUpFunction) => {
                     app.auth()
                     .signInWithEmailAndPassword(email.value, password.value);
                 history.push('/');
-                
             } catch (error) {
                 alert(error);
             }
@@ -38,7 +37,7 @@ const LoginPage = ({ history }, signUpFunction) => {
     return (
         <div>
             <h1>Log in</h1>
-            <form onSubmit={loginFunction}>
+            <form className="Form" onSubmit={loginFunction}>
                 <label className="signUpLabel">
                     Email
                     <input name="email" type="email" placeholder="Email" />
@@ -47,7 +46,7 @@ const LoginPage = ({ history }, signUpFunction) => {
                     Password
                     <input name="password" type="password" placeholder="Password" />
                 </label>
-                <button type="submit">Log in</button> <Link to="/signup">Go to Sign Up</Link>
+                <button type="submit">Log in</button> <button><Link className="Link" to="/signup">Go to Sign Up</Link></button>
                 {/* <br />
                 <br />
                 <Link to="/signup">Go to Sign Up</Link> */}

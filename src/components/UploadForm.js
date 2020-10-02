@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import ProgressBar from './ProgressBar';
-// import { app } from '../firebase/config';
+// import { projectFirestore } from '../firebase/config';
 import ImageGrid from './ImageGrid';
 
 const UploadForm = () => {

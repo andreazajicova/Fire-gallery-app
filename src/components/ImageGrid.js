@@ -8,7 +8,12 @@ import Modal from './Modal';
 const ImageGrid = () => {
     const [selectedPhoto, setSelectedPhoto] = useState(null);
     const { docs } = useFirestore('photos');
+    
+    // const user = firebase.auth().currentUser;
+    // const collectionRef = projectFirestore.collection('photos');
+    // console.log(collectionRef.where("author", "==", user.uid).get());      
 
+    // firebase.firestore().collection('users').doc(currentUser.uid).set(currentUser)
 
     const deleteImage = (id) => {
        let doc = id;

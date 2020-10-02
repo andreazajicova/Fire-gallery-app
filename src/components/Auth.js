@@ -8,11 +8,13 @@ export const AuthProvider = ({ children }) => {
     const [currentUser, setCurrentUser] = useState();
     const [pending, setPending ] = useState(true);
 
+    // firebase.firestore().collection('users').doc(currentUser.uid).set(currentUser)
+
     useEffect(() => {
         app.auth().onAuthStateChanged((user) => {
             setCurrentUser(user);
             setPending(false);
-            // console.log(currentUser.uid);
+            // const uid = user.uid;
         });
     }, [currentUser]);
 
