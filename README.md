@@ -12,7 +12,4 @@ To start this project:
 ## npm start
   
 
-or
-
-## https://shar-ed.netlify.app/login
 Enjoy 🌼 
