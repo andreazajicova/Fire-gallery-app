@@ -10,7 +10,6 @@ const ImageGrid = () => {
 
     const { currentUser } = useContext(AuthContext);
     const [selectedPhoto, setSelectedPhoto] = useState(null);
-    // const collectionRef = projectFirestore.collection('users').doc(currentUser.uid).collection('photos');
     const { docs } = useFirestore('users/' + currentUser.uid + '/photos');
     
     const deleteImage = (id) => {

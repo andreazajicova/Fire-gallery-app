@@ -26,7 +26,6 @@ const UploadForm = () => {
                 <input type="file" onChange={fileUpload} />
                 <span>⏍</span>
             </label>
-            {/* <button onClick={() => app.auth().signOut()}>Sign Out</button> */}
         <div className="photosBoard">
             { error && <div className="errorMessage"> { error } </div>} 
             { file && <div> { file.name } </div>}
