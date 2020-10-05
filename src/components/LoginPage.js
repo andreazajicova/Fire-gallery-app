@@ -1,15 +1,11 @@
 import React, { useCallback, useContext } from 'react';
 import { withRouter, Redirect} from 'react-router';
-// import { firebaseConfig } from '../firebase/config';
 import { Link } from 'react-router-dom';
 import { app } from '../firebase/config';
 import { AuthContext } from './Auth';
-// import SignUpPage from './SignUpPage';
 
 const LoginPage = ({ history }) => {
-
-    // const [hasAccount, setHasAccount] = useState(false);
-
+    
     const loginFunction = useCallback(
         async e => {
             e.preventDefault();
@@ -26,11 +22,8 @@ const LoginPage = ({ history }) => {
     );
 
     const { currentUser } = useContext(AuthContext);
-    // console.log(currentUser);
-
+    
     if (currentUser) {
-        // console.log(currentUser.uid);
-        // There is no currentUser coming from context, so Login always return Login form from below
         return <Redirect to='/' />;
     }
 

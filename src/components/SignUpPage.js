@@ -1,16 +1,9 @@
 import React, { useCallback } from 'react';
 import { withRouter } from 'react-router';
-// import { firebaseConfig } from '../firebase/config';
-import { app } from '../firebase/config';
+import { app, projectFirestore } from '../firebase/config';
 import { Link } from 'react-router-dom';
-// import { auth } from 'firebase';
-// import { projectFirestore } from '../firebase/config';
-// import { AuthContext } from '../components/Auth';
-
 
 const SignUpPage = ({ history }) => {
-    // const collectionRef = projectFirestore.collection('users');
-    // const [file, setFile] = useState(null);
 
     const signUpFunction = useCallback(async event => {
         event.preventDefault();
@@ -18,11 +11,10 @@ const SignUpPage = ({ history }) => {
         try {
             await 
             app.auth()
-            .createUserWithEmailAndPassword(email.value, password.value);
-            // console.log(email.value);
-            // collectionRef.doc(currentUser).set({
-            //     img: file
-            // });
+            .createUserWithEmailAndPassword(email.value, password.value)
+            .then(cred => projectFirestore.collection('users').doc(cred.user.uid).set({
+                email: email.value
+            }));
             history.push("/");
             
         } catch (error) {

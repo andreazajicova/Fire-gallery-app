@@ -1,23 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import useFirestore from '../hooks/useFirestore'; 
 import { motion } from 'framer-motion';
 import { projectFirestore } from '../firebase/config';
 import * as firebase from 'firebase';
 import Modal from './Modal';
+import { AuthContext } from './Auth';
 
 const ImageGrid = () => {
+
+    const { currentUser } = useContext(AuthContext);
     const [selectedPhoto, setSelectedPhoto] = useState(null);
-    const { docs } = useFirestore('photos');
+    // const collectionRef = projectFirestore.collection('users').doc(currentUser.uid).collection('photos');
+    const { docs } = useFirestore('users/' + currentUser.uid + '/photos');
     
-    // const user = firebase.auth().currentUser;
-    // const collectionRef = projectFirestore.collection('photos');
-    // console.log(collectionRef.where("author", "==", user.uid).get());      
-
-    // firebase.firestore().collection('users').doc(currentUser.uid).set(currentUser)
-
     const deleteImage = (id) => {
        let doc = id;
-       projectFirestore.collection('photos').doc(doc).delete();
+       projectFirestore.collection('users/' + currentUser.uid + '/photos').doc(doc).delete();
     }
 
     
