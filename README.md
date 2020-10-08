@@ -13,3 +13,6 @@ To start this project:
   
 
 Enjoy 🌼 
+
+Preview:
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/35815182/95457273-e7825e80-0970-11eb-882b-1deb45ed98fe.gif)
