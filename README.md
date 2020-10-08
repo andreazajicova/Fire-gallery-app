@@ -1,3 +1,5 @@
+![Screen-Recording-2020-10-08-at-1 (2)](https://user-images.githubusercontent.com/35815182/95459117-77c1a300-0973-11eb-9aec-2346135e7a25.gif)
+
 🌱 This project is in working progress 🌱
 
 It is a photo gallery you can share with your friends/family to update each other on your day/life with a photo and a caption below it. 
