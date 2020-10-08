@@ -20,7 +20,7 @@ Enjoy 🌼
 ![Screenshot 2020-10-08 at 14 09 14](https://user-images.githubusercontent.com/35815182/95465926-063a2280-097c-11eb-8c19-d6b6595ef738.png)
 
 ## 2.
-![Screenshot 2020-10-08 at 14 09 14]()
+![Screenshot 2020-10-08 at 14 09 14](https://user-images.githubusercontent.com/35815182/95465996-223dc400-097c-11eb-9367-5ea6e036f7a5.png)
 
 ## 3.
-![Screenshot 2020-10-08 at 14 09 14]()
+![Screenshot 2020-10-08 at 14 09 14](https://user-images.githubusercontent.com/35815182/95466041-2ec21c80-097c-11eb-8095-d74a7fc65c43.png)
