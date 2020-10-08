@@ -12,12 +12,5 @@ It is built with ReactJS and uses Firebase for the backend.
 
 More updates come in continuously 🌬⚙️
 
-To start this project:
-
-## git clone <this repo>
-## npm i
-## npm start
-  
-
 Enjoy 🌼 
 
