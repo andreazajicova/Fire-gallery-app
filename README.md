@@ -1,4 +1,4 @@
-## Preview of the app:
+## Preview of the app: 
 
 ![Screen-Recording-2020-10-08-at-1 (2)](https://user-images.githubusercontent.com/35815182/95459117-77c1a300-0973-11eb-9aec-2346135e7a25.gif)
 
@@ -24,3 +24,7 @@ Enjoy 🌼
 
 ## 3.
 ![Screenshot 2020-10-08 at 14 09 14](https://user-images.githubusercontent.com/35815182/95466041-2ec21c80-097c-11eb-8095-d74a7fc65c43.png)
+
+## Preview it deployed to Netlify:
+
+https://shar-ed.netlify.app/login
