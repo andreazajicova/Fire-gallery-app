@@ -27,4 +27,4 @@ Enjoy 🌼
 
 ## Preview it deployed to Netlify:
 
-https://shar-ed.netlify.app/login
+https://shar-ed.netlify.app
